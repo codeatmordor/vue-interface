@@ -1,12 +1,13 @@
 <template>
   <div id="main-app" class="container">
+  <div class="row justify-content-center">
    <appointment-list v-bind:appointments="appointments"/>
+   </div>
   </div>
 </template>
 
 <script>
 
-import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome"
 import AppointmentList from "./components/AppointmentList"
 import axios from "axios"
 
@@ -20,7 +21,6 @@ export default {
     }
   },
   components:{
-    FontAwesomeIcon,
     AppointmentList
   },
   mounted(){
